@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f1ef;
+}
+
+
+/* 
+    Calculator properties
+ */
+ .container{
+     background-color: #bfbfbf;
+     margin-top: 7%;
+     height: 70%;
+     width: 400px;
+     border-radius: 1%;
+     padding: 8px;
+ }
+
+ .screen{
+
+    background: white;
+    font-size: 35px;
+    padding: 30px;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+ .key-pad-container{
+      width: 100%;
+      height: 50%;
+      margin-top: 8px;
+      display: inline-grid;
+      grid-template-columns:auto auto auto auto;
+      grid-template-rows: auto;
+      grid-gap: 5px;
+      background-color: transparent;
+     
+ }
+
+.key, .operator, .equals, .plus-minus, .dot, .back-space {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    background-color: mediumslateblue;
+    display: inline-block;
+    text-align: center;
+    padding: 7%;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#back{
+    grid-column: 2/4;
+}
+.key:hover{
+    opacity: 0.55;
+}
+.back-space:hover{
+    opacity: 0.55;
+}
+.operator:hover{
+    opacity: 0.55;
+}
+.equals:hover{
+    opacity: 0.55;
+}
+.plus-minus:hover{
+    opacity: 0.55;
+}
+.dot:hover{
+    opacity: 0.55;
+}
